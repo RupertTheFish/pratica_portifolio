@@ -1,0 +1,270 @@
+:root {
+    --white: #fff;
+    --container-item-color: rgb(255, 255, 255, 0.8)
+    --black: #000;
+    --primary-color: #00C4E0;
+    --secondary-color: #2E7F8B;
+    --terciary-color: #1EA2B6;
+    --background-color: #2B3233;    
+    --quarternary-color: #243436;
+    --main-font: "Poppins";
+
+}
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    color: var(--white);
+    background-color: var(--background-color);
+    scroll-behavior: smooth;
+}
+
+
+body {
+    font-family: var(--main-font);
+    max-width: 1120px;
+    margin: 0 auto;
+}
+
+ul {
+    display: flex;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 10px;
+    position: sticky;
+    top: 0;
+    background-color: var(--background-color);
+    opacity: 90%;
+
+}
+
+
+.header a:hover .logo {
+    color: var(--terciary-color);
+    transition: 0.2s;
+    border-color: var(--white);
+}
+
+.header .nav__bar li a {
+    font-size: 20px;
+    text-transform: capitalize;
+    padding: 10px 20px;
+    transition: 0.2s;
+}
+
+.header .nav__bar li a:hover {
+    color: var(--terciary-color);
+    text-decoration: underline solid var(--terciary-color) 2px;
+    text-underline-offset: 8px;
+}
+
+a:link,
+a:visited {
+    text-decoration: none;
+    color: var(--white);
+}
+
+.about {
+    display: flex;
+    margin: auto 20px;
+    gap: 15px;
+    align-items: center;
+    height: 100vh;
+}
+
+.about .about__me {
+    max-width: 50vw;
+}
+
+.about .about__me p {
+    font-size: 1.2rem;
+}
+
+
+.about .about__img img {
+    width: 30vw;
+    border-radius: 50%;
+}
+
+.infos,
+.projects {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    text-align: center;
+
+}
+
+.infos li a,
+.projects li a {
+    padding: 8px 16px;
+    transition: 0.2s;
+    background-color: var(--terciary-color);
+    border-radius: 50px;
+    box-shadow: 2px 2px 3px 3px var(--black);
+}
+
+.infos li a {
+    margin-left: 20px;
+}
+
+.infos li a:hover,
+.projects li a:hover {
+    background-color: var(--white);
+    color: var(--terciary-color);
+}
+
+footer {
+    margin-top: 32vh;
+    font-size: small;
+    text-align: center;
+    opacity: 50%;
+}
+
+footer p {
+    margin-bottom: 8px;
+}
+
+h1 {
+    font-size: 30px;
+    margin-bottom: 30px;
+}
+
+h2,
+h3 {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+h2 {
+    font-size: 20px;
+}
+
+h4 {
+    font-size: 20px;
+    border: 3px solid var(--secondary-color);
+    padding: 5px;
+    border-radius: 50%;
+}
+
+.formations,
+.infos,
+.projects {
+    padding: 96px 20px;
+}
+
+.formations_item {
+    display: block;
+    text-align: center;
+    justify-content: space-between;
+    margin-bottom: 40px;
+    border: 1px solid var(--white);
+    padding: 1.5rem;
+    border-radius: 1rem;
+    box-shadow: 8px 8px 8px black;
+}
+
+.formations_item h3 {
+    margin-bottom: 10px;
+}
+
+.formations_item h2 {
+    color: var(--primary-color);
+}
+
+.infos {
+    display: flex;
+    flex-direction: column;
+
+}
+
+.section-title {
+    margin-bottom: 90px;
+}
+
+.container-infos {
+    display: flex;
+    flex-direction: row;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+}
+
+.input-title {
+    font-size: 18px;
+}
+
+.input-area {
+    height: 40px;
+    width: 450px;
+    border-radius: 8px;
+}
+
+.container-infos {
+    margin-bottom: 48px;
+}
+
+.message-area {
+    height: 250px;
+    width: 450px;
+    resize: none;
+    border-radius: 8px;
+}
+
+button {
+    background-color: var(--terciary-color);
+    border: none;
+    height: 40px;
+    border-radius: 50px;
+
+    font: var(--main-font);
+    color: var(--white);
+    margin-bottom: 45px;
+}
+
+button:hover {
+    color: var(--terciary-color);
+    background-color: var(--white);
+    cursor: pointer;
+}
+
+.projects {
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    background-color: var(--secondary-color);
+    padding: 30px 15px;
+
+    border-radius: 20px;
+    column-gap: 15px;
+    row-gap: 30px;
+    max-width: 1120px;
+    width: 100vw;
+    
+}
+
+.grid-item {
+    background-color: rgb(255, 255, 255, 0.8);
+    border-radius: 40px;
+    border: 2px solid var(--quarternary-color);
+    padding: 20px;
+    font-size: 30px;
+    text-align: center;
+    box-shadow: 2px 2px 3px 3px var(--quarternary-color);
+    
+}
